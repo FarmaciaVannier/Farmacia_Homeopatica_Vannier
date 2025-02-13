@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farmacia Homeopatica Vannier</title>
+
+  <!-- CSS y otros recursos -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo_vannier.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Incluye íconos de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-dOi7gTp1hQzq5GrG5xWkDpmyu5klw6A5EUTDycVpFkRvHqKp3SDoRAe5V64u2RPQ+TCA1jGVZf5R4UuR2P4nvA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<div id="loader">
+  <img src="img/logo_vannier.png" alt="Icono de fondo" class="loader-icon" />
+  <div class="loader-bars">
+    <div class="bar" style="background-color: #007bff"></div>
+    <div class="bar" style="background-color: #ff6b6b"></div>
+    <div class="bar" style="background-color: #6c5ce7"></div>
+    <div class="bar" style="background-color: #2ecc71"></div>
+    <div class="bar" style="background-color: #f39c12"></div>
+    <div class="bar" style="background-color: #f1ea7d"></div>
+    <div class="bar" style="background-color: #a12bb1"></div>
+    <div class="bar" style="background-color: #f55a5a"></div>
+  </div>
+  <p class="loader-text">Cargando...</p>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+
+    // Desvanecer el loader
+    loader.style.transition = "opacity 0.5s ease";
+    loader.style.opacity = "0";
+
+    // Esperar el final de la animación y luego ocultar el loader
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500); // El mismo tiempo de la transición de opacidad
+  });
+</script>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a><img class="img-logo" src="img/logo_vannier.png" alt="logo" /></a>
+
+      <nav class="menu">
+        <a href="acerca.html">Referente a</a>
+        <a href="productos.html">Productos</a>
+        <a href="index.html">Blog</a>
+        <a href="https://wa.me/5585601745?text=Hola%2C%20me%20interesa%20obtener%20información%20sobre%20sus%20productos."
+          target="_blank">Contacto</a>
+      </nav>
+      <div class="menu-icon" style="cursor: pointer">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="cart" style="cursor: pointer">
+        <i class="fas fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+  <div id="avisos">
+    <div class="swiper avisos-carrusel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/carrusel2.jpg" alt="Imagen 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/carrusel3.jpg" alt="Imagen 3" />
+        </div>
+      </div>
+      <!-- Paginación -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <main class="blog-content">
+    <section class="featured-news">
+      <!-- Aviso tienda online -->
+      <div class="store-notice">
+        <h2>¡Descubre nuestros productos en línea!</h2>
+        <p>
+          Compra fácilmente desde la comodidad de tu hogar. Accede a la tienda
+          online de nuestra farmacia y encuentra todo lo que necesitas para tu
+          bienestar.
+        </p>
+        <a href="productos.html" class="btn-shop-now">Visítanos</a>
+      </div>
+    </section>
+    <!--Seccion de homeopatia-->
+    <section class="featured-news">
+      <article class="featured-item">
+        <img class="img-news" src="img/mascotas.jpg" alt="img" />
+        <div class="featured-content">
+          <h2 style="background-color: #5aa5fa7c; color: rgb(0, 0, 0); border-radius: 3px; padding: 5px;">
+            <i class="fas fa-paw" style="margin-right: 10px; font-size: 0.9rem;"></i>
+            Próximamente
+            <i class="fas fa-paw" style="margin-left: 10px; font-size: 0.9rem;"></i>
+          </h2>
+
+          <p>Productos <strong>Homeopáticos</strong> para <strong>Mascotas</strong></p>
+          <p class="full-content" style="display: none">
+            ¡Estamos emocionados de anunciar que muy pronto
+            podrás encontrar productos homeopáticos diseñados Especialmente para el
+            bienenstar de tus mascotas!
+          </p>
+          </p>
+          <button class="read-more-btn leer">Leer más</button>
+          <button class="close-btn" style="display: none">Cerrar</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="featured-news">
+      <article class="featured-item">
+        <img class="img-news" src="img/Homeopatia.png" alt="img" />
+        <div class="featured-content">
+          <h2>¿Qué es la homeopatía?</h2>
+          <p>Es una terapéutica alternativa desarrollado en el siglo XVIII por
+            Samuel Hahnemann. Se basa en dos principios principales:</p>
+          <p class="full-content" style="display: none">
+            1."Similia similibus curantur" (lo similar cura lo similar): Según
+            este principio, una sustancia que causa síntomas en una persona
+            sana puede, en cantidades muy pequeñas, tratar esos mismos
+            síntomas en una persona enferma.<br>
+            2. Dilución y dinamización: Los
+            medicamentos homeopáticos se elaboran mediante un proceso de dilución
+            repetida y agitación (energización). Aunque la dilución es
+            extrema y podría no quedar molécula alguna de la sustancia
+            original, el agua retiene una "memoria" de la sustancia que activa
+            la respuesta curativa del cuerpo.
+          </p>
+          </p>
+          <button class="read-more-btn leer">Leer más</button>
+          <button class="close-btn" style="display: none">Cerrar</button>
+        </div>
+      </article>
+    </section>
+    <!-- Sección de Noticias Destacadas -->
+    <section class="featured-news">
+      <article class="featured-item">
+        <img class="img-news" src="img/anginasROJA.png" alt="img" />
+        <div class="featured-content">
+          <h2>Anginas Agudas</h2>
+          <p>(Amigdalitis) Fórmula N°13</p>
+          <p class="full-content" style="display: none">
+            • De frecuente repetición<br />
+            • Inflamadas • Enrojecidas<br />
+            • Ulceradas<br />
+            • Dolor al deglutir <br />
+            • Fiebre • Especialmente en niños
+          </p>
+          <button class="read-more-btn leer">Leer más</button>
+          <button class="close-btn" style="display: none">Cerrar</button>
+        </div>
+      </article>
+    </section>
+    <!-- Otra noticia-->
+    <section class="featured-news">
+      <article class="featured-item">
+        <img class="img-news" src="img/gripe.png" alt="img" />
+        <div class="featured-content">
+          <h2>Gripe</h2>
+          <p>(Influenza) Fórmula N°123</p>
+          <p class="full-content" style="display: none">
+            • Infección viral <br />
+            • Dolor corporal, de huesos y articulaciones<br />
+            • Dolor de cabeza<br />
+            • Fiebre<br />
+            • Estornudos<br />
+            • Mucosidad<br />
+            • Postración<br />
+          </p>
+          <button class="read-more-btn">Leer más</button>
+          <button class="close-btn" style="display: none">Cerrar</button>
+        </div>
+      </article>
+    </section>
+    <!-- Otra noticia-->
+    <section class="featured-news">
+      <article class="featured-item">
+        <img class="img-news" src="img/golpes.png" alt="img" />
+        <div class="featured-content">
+          <h2>Contusiones</h2>
+          <p>(Golpes, traumatismos) Formula N°63</p>
+          <p class="full-content" style="display: none">
+            • Dolor reciente o antiguo<br />
+            • Enrojecimiento (moretones)<br />
+            • Inflamación<br />
+            • En musculo, ligamentos, huesos<br />
+          </p>
+          <button class="read-more-btn">Leer más</button>
+          <button class="close-btn" style="display: none">Cerrar</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- Otra noticia-->
+    <section class="featured-news">
+      <article class="featured-item">
+        <img class="img-news" src="img/colitis.jpg" alt="img" />
+        <div class="featured-content">
+          <h2>Colitis</h2>
+          <p>Inflamación del colon (intestino grueso). Formula N°58</p>
+          <p class="full-content" style="display: none">
+            Causas: Por Infecciones, parásitos o nerviosa.<br>
+            <strong>Síntomas:</strong><br>
+            • Abundante producción de gases<br>
+            • Eructos constantes<br>
+            • Dolor continuo o cólicos<br>
+            • Estreñimiento o diarrea<br>
+            • Vientre abultado<br>
+            • Sensación de llenura e incomodidad total<br>
+            <strong>Recomendaciones:</strong><br>
+            - Disminuir considerablemente o quitar el consumo de harinas (pan de dulce y bolillo, tortillas pastas,
+            galletas, pasteles, golosinas de harina, etc.) Solo comer pan tostado en poca cantidad.<br>
+            - No comer temporalmente coliflor, calabazas, garbanzos, frijoles, papa,lentejas, habas y otros vegetales
+            que tú identifiques que te producen inflamación.<br>
+            - No tomar leche y derivados temporalmente.<br>
+            - No comer irritantes, chile, café, refrescos, grasas etc.<br>
+          </p>
+          <button class="read-more-btn">Leer más</button>
+          <button class="close-btn" style="display: none">Cerrar</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="featured-news">
+      <!-- Aviso tienda online -->
+      <div class="store-notice">
+        <h2>¡Descubre nuestros productos en línea!</h2>
+        <p>
+          Compra fácilmente desde la comodidad de tu hogar. Accede a la tienda
+          online de nuestra farmacia y encuentra todo lo que necesitas para tu
+          bienestar.
+        </p>
+        <a href="productos.html" class="btn-shop-now">Visítanos</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sección del carrito que estará oculta inicialmente -->
+  <section id="carrito" style="display: none">
+    <div class="header-carrito">
+      <button id="cerrar" title="Cerrar">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h2 class="decorado">Tu Carrito</h2>
+    </div>
+    <div id="lista-carrito">
+      <!-- Aquí se agregarán los productos seleccionados -->
+    </div>
+    <div id="total-compra">Total: $<span id="total">0</span></div>
+    <br />
+    <!-- Campo para ingresar el número de teléfono o correo electrónico -->
+    <div id="contacto">
+      <label for="contacto-info">Ingresa tu teléfono:</label>
+      <input type="text" id="contacto-info" name="contacto-info" placeholder="Teléfono" required pattern="\d{10}"
+        title="Ingresa un número de teléfono de 10 dígitos" />
+    </div>
+    <br />
+    <button id="checkout">
+      <i class="fas fa-paper-plane"></i> Realizar Pedido
+    </button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-left">
+      <h2>Farmacia Homeopática Vannier</h2>
+
+      <div class="social-icons">
+        <!--
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>-->
+      </div>
+      <img src="img/logo_vannier.png" alt="Logo Farmacia Vannier" class="footer-logo" />
+    </div>
+
+    <div class="footer-right">
+      <ul>
+        <li><a href="acerca.html">Referente a</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li>
+          <a href="https://wa.me/5585601745?text=Hola%2C%20me%20interesa%20obtener%20información%20sobre%20sus%20productos."
+            target="_blank" rel="noopener noreferrer">
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="firma">
+      <p>&copy; 2024. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/app.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const avisosSwiper = new Swiper(".avisos-carrusel", {
+      loop: true,
+      slidesPerView: 1,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 800,
+    });
+  </script>
+
+  <script>
+    // muestra div oculto ultimas news
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Seleccionar todos los contenedores de artículos destacados
+      const articles = document.querySelectorAll(".featured-item");
+
+      articles.forEach((article) => {
+        const readMoreBtn = article.querySelector(".read-more-btn");
+        const closeBtn = article.querySelector(".close-btn");
+        const fullContent = article.querySelector(".full-content");
+
+        // Mostrar contenido completo al hacer clic en "Leer más"
+        readMoreBtn.addEventListener("click", () => {
+          fullContent.style.display = "block";
+          readMoreBtn.style.display = "none";
+          closeBtn.style.display = "inline-block";
+        });
+
+        // Ocultar contenido completo al hacer clic en "Cerrar"
+        closeBtn.addEventListener("click", () => {
+          fullContent.style.display = "none";
+          readMoreBtn.style.display = "inline-block";
+          closeBtn.style.display = "none";
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

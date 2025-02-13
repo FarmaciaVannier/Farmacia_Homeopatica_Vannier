@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmacia Homeopatica Vannier</title>
+    
+
+    <!-- CSS y otros recursos -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_vannier.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Incluye íconos de Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-dOi7gTp1hQzq5GrG5xWkDpmyu5klw6A5EUTDycVpFkRvHqKp3SDoRAe5V64u2RPQ+TCA1jGVZf5R4UuR2P4nvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <div id="loader">
+    <img src="img/logo_vannier.png" alt="Icono de fondo" class="loader-icon">
+    <div class="loader-bars">
+      <div class="bar" style="background-color: #007bff;"></div>
+      <div class="bar" style="background-color: #ff6b6b;"></div>
+      <div class="bar" style="background-color: #6c5ce7;"></div>
+      <div class="bar" style="background-color: #2ecc71;"></div>
+      <div class="bar" style="background-color: #f39c12;"></div>
+      <div class="bar" style="background-color: #f1ea7d;"></div>
+      <div class="bar" style="background-color: #a12bb1;"></div>
+      <div class="bar" style="background-color: #f55a5a;"></div>
+    </div>
+    <p class="loader-text">Cargando...</p>
+  </div>
+  <script>
+    window.addEventListener('load', function() {
+      const loader = document.getElementById('loader');
+      
+      // Desvanecer el loader
+      loader.style.transition = 'opacity 0.5s ease';
+      loader.style.opacity = '0';
+  
+      // Esperar el final de la animación y luego ocultar el loader
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500); // El mismo tiempo de la transición de opacidad
+    });
+  </script>
+  
+  
+  
+    
+  <body>
+
+    <header>
+      <div class="header-container">
+        <a><img class="img-logo" src="img/logo_vannier.png" alt="logo" /></a>
+
+        <nav class="menu">
+          <a href="acerca.html">Referente a</a>
+          <a href="productos.html">Productos</a>
+          <a href="index.html">Blog</a>
+          <a href="https://wa.me/5585601745?text=Hola%2C%20me%20interesa%20obtener%20información%20sobre%20sus%20productos." target="_blank">Contacto</a>
+        </nav>
+        <div class="menu-icon" style="cursor: pointer">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="cart" style="cursor: pointer">
+          <i class="fas fa-cart-shopping"></i>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+    </header>
+    <div id="avisos">
+      <div class="swiper avisos-carrusel">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="img/carrusel2.jpg" alt="Imagen 2" />
+          </div>
+          <div class="swiper-slide"><img src="img/carrusel3.jpg" alt="Imagen 3"></div>
+           
+        </div>
+        <!-- Paginación -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    
+    
+
+    <main>
+      <div class="store-notice">
+        <h2>Revisa nuestra lista de medicamentos</h2>
+        <a href="https://drive.google.com/file/d/1SvRR7KOmkMfnH6Iq9fxmkoX8AlrVolXo/view?usp=sharing" class="btn-shop-now" target="_blank">
+          <i class="fas fa-download"></i>
+          <span>Descargar lista</span>
+        </a>
+        <p class="info">También surtimos <strong>recetas médicas</strong> homeopáticas; contamos con extenso surtido de medicamentos 
+          <strong>officinalis</strong> en distintas potencias, <strong>6c, 30c y 200c</strong> en impregnación y en dilución.<br>
+          Contamos con un extenso surtido de medicamentos polifármacos de Laboratorios Homeopáticos más 
+          importantes como son: <strong>GLISER, MEDICOR, NARTEX, SIMILIA</strong> y otros más.
+        </p>
+        
+        
+      </div>
+      
+      <section id="productos">
+
+        <!-- Producto1 -->
+        <div class="producto">
+            <img src="img/frasco4.jpg" alt="frasco" />
+            <h3 class="producto-titulo">ANGINAS AGUDAS.<br>(Amigdalitis) Fórmula N°13</h3>
+            <p class="precio">Precio: $90</p>
+            <button class="agregar-carrito">
+                <i class="fas fa-cart-plus"></i> Agregar al carrito
+            </button>
+    
+            <!-- Modal específico -->
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>•	De frecuente repetición<br>
+                      •	Inflamadas<br>
+                      •	Enrojecidas<br>
+                      •	Ulceradas<br>
+                      •	Dolor al deglutir<br>
+                      •	Fiebre<br>
+                      •	Especialmente en niños<br>
+                      </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Producto2 -->
+        <div class="producto">
+            <img src="img/frasco1.jpg" alt="frasco" />
+            <h3 class="producto-titulo">ANGINAS CRÓNICAS.<br>(Influenza) Fórmula N°15</h3>
+            <p class="precio">Precio: $90</p>
+            <button class="agregar-carrito">
+                <i class="fas fa-cart-plus"></i> Agregar al carrito
+            </button>
+    
+            <!-- Modal específico -->
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>• Con gran crecimiento (hipertrofia)<br>
+                      •	Tejido dañado conmarcas de cicatrización (perforaciones)<br>
+                      •	Por procesos infecciosos continuos<br>
+                      </p>
+                </div>
+            </div>
+        </div>
+
+
+      <!-- Producto3 -->
+      <div class="producto">
+          <img src="img/frasco6.jpg" alt="frasco" />
+          <h3 class="producto-titulo">COLITIS.<br>(Inflamación aguda del intestino grueso, colon) Fórmula N°58
+            
+            </h3>
+          <p class="precio">Precio: $90</p>
+          <button class="agregar-carrito">
+              <i class="fas fa-cart-plus"></i> Agregar al carrito
+          </button>
+  
+          <!-- Modal específico -->
+          <div class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>•	Cólico<br>
+                    •	Gases abundantes<br>
+                    •	Vientre abultado<br>
+                    •	Diarrea o estreñimiento, o ambas<br>
+                    •	Por temperamento nervioso o angustiante<br>
+                    •	Infeccioso o no (Por parásitos)<br>                    
+                    </p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Producto4 -->
+      <div class="producto">
+        <img src="img/frasco3.jpg" alt="frasco" />
+        <h3 class="producto-titulo">CONTUSIONES.<br>(Golpes, traumatismos) Formula N°63</h3>
+        <p class="precio">Precio: $90</p>
+        <button class="agregar-carrito">
+            <i class="fas fa-cart-plus"></i> Agregar al carrito
+        </button>
+
+        <!-- Modal específico -->
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>•	Dolor reciente o antiguo<br>
+                  •	Enrojecimiento (moretones)<br>
+                  •	Inflamación<br>
+                  •	En musculo, ligamentos, huesos<br>
+                  </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Producto5 -->
+    <div class="producto">
+      <img src="img/frasco5.jpg" alt="frasco" />
+      <h3 class="producto-titulo">DENTICIÓN, TRASTORNOS DE LA.<br>Fórmula N°75</h3>
+      <p class="precio">Precio: $90</p>
+      <button class="agregar-carrito">
+          <i class="fas fa-cart-plus"></i> Agregar al carrito
+      </button>
+
+      <!-- Modal específico -->
+      <div class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>•	En bebés que empiezan a aparecer los dientes<br>
+                •	Diarreas verdosas o amarillentas<br>
+                •	Carácter muy irritable<br>
+                •	Comezón en las encías<br>
+                •	Cólico intestinal<br>
+                •	Encías inflamadas<br>
+                •	Fiebre<br>
+                •	Pérdida del apetito<br></p>
+          </div>
+      </div>
+  </div>
+
+    <!-- Producto6 -->
+    <div class="producto">
+      <img src="img/frasco2.jpg" alt="frasco" />
+      <h3 class="producto-titulo">GASTRITIS.<br>(Inflamación del estómago) Fórmula N°114</h3>
+      <p class="precio">Precio: $90</p>
+      <button class="agregar-carrito">
+          <i class="fas fa-cart-plus"></i> Agregar al carrito
+      </button>
+
+      <!-- Modal específico -->
+      <div class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>•	Irritación del estómago<br>
+                •	Por abuso de alimentos, bebidas irritantes<br>
+                •	Por abuso de medicamentos alopáticos<br>
+                •	Dolor<br>
+                •	Ardor<br>
+                •	Agruras<br>
+                •	Sensación de hambre continuamente<br>
+                •	Por infecciones<br></p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Producto7 -->
+  <div class="producto">
+    <img src="img/frasco4.jpg" alt="frasco" />
+    <h3 class="producto-titulo">GRIPE.<br>(Influenza) Fórmula N°123</h3>
+    <p class="precio">Precio: $90</p>
+    <button class="agregar-carrito">
+        <i class="fas fa-cart-plus"></i> Agregar al carrito
+    </button>
+
+    <!-- Modal específico -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>•	Infección viral<br>
+              •	Dolor corporal, de huesos y articulaciones<br>
+              •	Dolor de cabeza<br>
+              •	Estornudos<br>
+              •	Mucosidad<br>
+              •	Fiebre<br>
+              •	Postración<br>
+              </p>
+        </div>
+    </div>
+</div>
+
+<!-- Producto8 -->
+<div class="producto">
+    <img src="img/frasco1.jpg" alt="frasco" />
+    <h3 class="producto-titulo">LARINGITIS AGUDA.<br>(Garganta inflamada) Fórmula N°145</h3>
+    <p class="precio">Precio: $90</p>
+    <button class="agregar-carrito">
+        <i class="fas fa-cart-plus"></i> Agregar al carrito
+    </button>
+
+    <!-- Modal específico -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>• Dolor de garganta<br>
+              •	Inflamación<br>
+              •	Tos constante con flema o seca<br>
+              • Afonía o voz ronca<br>
+              •	Cosquilleo y ardor en la garganta<br>
+              •	Flemas<br>
+              • Fiebre<br>
+              • Escurrimiento nasal o no<br>
+              </p>
+        </div>
+    </div>
+</div>
+
+<!-- Producto9 -->
+<div class="producto">
+  <img src="img/frasco6.jpg" alt="frasco" />
+  <h3 class="producto-titulo">MENOPAUSIA.<br>(Climaterio) Fórmula N°157
+    
+    </h3>
+  <p class="precio">Precio: $90</p>
+  <button class="agregar-carrito">
+      <i class="fas fa-cart-plus"></i> Agregar al carrito
+  </button>
+
+  <!-- Modal específico -->
+  <div class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>•	Calores (bochornos)<br>
+            •	Sudoraciones<br>
+            •	Palpitaciones cardiacas<br>
+            •	Dolor de cabeza<br>
+            •	Insomnio<br>
+            •	Irritabilidad de carácter<br>
+            • Sensibilidad de las emociones , abatimiento<br>
+            • Agitación, nerviodsidad, desesperación<br>
+            • Congestiones locales (partes frías y calientes del cuerpo)<br>                  
+            </p>
+      </div>
+  </div>
+</div>
+
+<!-- Producto10 -->
+<div class="producto">
+<img src="img/frasco3.jpg" alt="frasco" />
+<h3 class="producto-titulo">MENSTRUAL, SÍNDROME.<br>(Menstruación irregular) Formula N°165</h3>
+<p class="precio">Precio: $90</p>
+<button class="agregar-carrito">
+    <i class="fas fa-cart-plus"></i> Agregar al carrito
+</button>
+
+<!-- Modal específico -->
+<div class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p> • Sensibilidad intensa de las emociones (tristeza, depresión, irritabilidad, ansiedad, temor)<br>
+          •	Presión arterial baja (hipotensión)<br>
+          •	Sueño muy intenso y en todo momento<br>
+          •	Período menstrual que se adelanta, se atrasa, se suprime, totalmente irregular<br>
+          •	Sangrados abundantes o muy escasos, con coágulos, con flujo<br>
+          •	Inflamación del vientre, cólicos, dolor de ovarios<br>
+          •	Por alteraciones hormonales<br>
+          • A cualquier edad, especialmente mujeres muy jovenes<br>              
+          </p>
+    </div>
+</div>
+</div>
+
+<!-- Producto11 -->
+<div class="producto">
+<img src="img/frasco5.jpg" alt="frasco" />
+<h3 class="producto-titulo">NEFRITIS.<br>(Inflamación del riñon) Fórmula N°171</h3>
+<p class="precio">Precio: $90</p>
+<button class="agregar-carrito">
+  <i class="fas fa-cart-plus"></i> Agregar al carrito
+</button>
+
+<!-- Modal específico -->
+<div class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>•	Hinchazón de las piernas, manos o parpados (edema)<br>
+        •	Dolor en la región renal y alrededor de este<br>
+        •	Alteraciones urinarias (poca o mucha orina y frecuente)<br>
+        •	No se puede orinar (anuria)<br>
+        •	Orina frecuente por las noches<br>
+        •	Por infección, por falta de hidratación, (no tomar suficiente agua) por usos de sustancias tóxicas (alcohol, café, refrescos, etc.)<br>
+        •	Por un enfriamiento o alguna contusión (golpe)<br>
+      </p>
+  </div>
+</div>
+</div>
+
+<!-- Producto12 -->
+<div class="producto">
+<img src="img/frasco2.jpg" alt="frasco" />
+<h3 class="producto-titulo">NERVIOSIDAD.<br>Fórmula N°174</h3>
+<p class="precio">Precio: $90</p>
+<button class="agregar-carrito">
+  <i class="fas fa-cart-plus"></i> Agregar al carrito
+</button>
+
+<!-- Modal específico -->
+<div class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>•	Excitabilidad<br>
+        •	Angustia, ansiedad, preocupación intensa, miedo<br>
+        •	Depresión, compulsiones<br>
+        •	Irritabilidad de carácter<br>
+        •	Insomnio<br>
+        •	Dolor de cabeza<br>
+        </p>
+  </div>
+</div>
+</div>
+
+ <!-- Producto13 -->
+ <div class="producto">
+  <img src="img/frasco4.jpg" alt="frasco" />
+  <h3 class="producto-titulo">PRÓSTATA, HIPERTROFIA DE LA.<br>(Crecimiento de la próstata) Fórmula N°198</h3>
+  <p class="precio">Precio: $90</p>
+  <button class="agregar-carrito">
+      <i class="fas fa-cart-plus"></i> Agregar al carrito
+  </button>
+
+  <!-- Modal específico -->
+  <div class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>•	Atrofia de la glándula prostática por procesos inflamatorios agudos continuos<br>
+            •	Por una tumoración benigna de la glándula (adenoma)<br>
+            •	Sensación continua de querer orinar y no poder orinar u orinar muy poco especialmente por la noche<br>
+            •	Retención de la orina en la vejiga<br>
+            •	Especialmente en hombres a partir de los 60 años<br>
+            </p>
+      </div>
+  </div>
+</div>
+
+<!-- Producto14 -->
+<div class="producto">
+  <img src="img/frasco1.jpg" alt="frasco" />
+  <h3 class="producto-titulo">PROSTATITIS AGUDA.<br>(Inflamación de la próstata) Fórmula N°199</h3>
+  <p class="precio">Precio: $90</p>
+  <button class="agregar-carrito">
+      <i class="fas fa-cart-plus"></i> Agregar al carrito
+  </button>
+
+  <!-- Modal específico -->
+  <div class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>• Por infección<br>
+            •	Deseo frecuente de orinar<br>
+            •	Imposibilidad de poder orinar<br>
+            • Orina en mjuy poca cantidad y con dificultad<br>
+            •	Sensación de peso debajo de la vejiga<br>
+            •	Puede haber sangre al orinar<br>
+            •	Dolor al orinar<br>
+            </p>
+      </div>
+  </div>
+</div>
+
+
+<!-- Producto15 -->
+<div class="producto">
+<img src="img/frasco6.jpg" alt="frasco" />
+<h3 class="producto-titulo">REUMATISMO ARTICULAR.<br>(Artritis, dolor articular) Fórmula N°203
+  
+  </h3>
+<p class="precio">Precio: $90</p>
+<button class="agregar-carrito">
+    <i class="fas fa-cart-plus"></i> Agregar al carrito
+</button>
+
+<!-- Modal específico -->
+<div class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>•	Dolor, rigidez, inflamación, enrojecimiento de las articulaciones<br>
+          •	Por cambios bruscos de temperatura o por humedad en el ambiente<br>
+          •	Por excesos de trabajo<br>
+          •	Fiebre<br>                  
+          </p>
+    </div>
+</div>
+</div>
+
+<!-- Producto16 -->
+<div class="producto">
+<img src="img/frasco3.jpg" alt="frasco" />
+<h3 class="producto-titulo">VARICES.<br>(Deterioro por dilatación de las venas) Formula N°240</h3>
+<p class="precio">Precio: $90</p>
+<button class="agregar-carrito">
+  <i class="fas fa-cart-plus"></i> Agregar al carrito
+</button>
+
+<!-- Modal específico -->
+<div class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>•	Venas ardorosas, dolorosas, con comezón, tensas, especialmente de las piernas<br>
+        •	Adormecimiento de las extremidades<br>
+        •	Calambres<br>
+        •	Extremidades o muy frías o muy calientes<br>
+        •	Con hinchazón de las extremidades<br>
+        </p>
+  </div>
+</div>
+</div>
+
+
+
+    </section>
+    
+    
+    
+
+<!--
+       <div class="producto">
+        <div class="producto-carrusel">
+            <img class="producto-vela activo" src="img/clasica.png" alt="Vela Calabaza" />
+            <img class="producto-vela" src="img/ambar-lucerna.png" alt="Vela Alternativa" />
+        </div>
+        <div class="navegacion">
+            <span class="punto activo" data-index="0"></span>
+            <span class="punto" data-index="1"></span>
+        </div>
+        <h3 class="producto-titulo">Peonia</h3>
+        <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+        <select class="opciones">
+            <option value="220" data-precio="220">Clásica 200g - $220</option>
+            <option value="250" data-precio="250">Ámbar 200g - $250</option>
+        </select>
+        <p class="precio">Precio en pesos MX</p>
+        <button class="agregar-carrito">
+          <i class="fas fa-cart-plus"></i>
+          Agregar al carrito
+        </button>
+    </div>
+
+        <div class="producto">
+          <div class="producto-carrusel">
+              <img class="producto-vela activo" src="img/clasica-orquidea.png" alt="Vela Calabaza" />
+              <img class="producto-vela" src="img/ambar-orquidea.png" alt="Vela Alternativa" />
+          </div>
+          <div class="navegacion">
+              <span class="punto activo" data-index="0"></span>
+              <span class="punto" data-index="1"></span>
+          </div>
+          <h3 class="producto-titulo">Orquídea Negra</h3>
+          <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+          <select class="opciones">
+              <option value="220" data-precio="220">Clásica 200g - $220</option>
+              <option value="250" data-precio="250">Ámbar 200g - $250</option>
+          </select>
+          <p class="precio">Precio en pesos MX</p>
+          <button class="agregar-carrito">
+            <i class="fas fa-cart-plus"></i>
+            Agregar al carrito
+          </button>
+      </div>
+      </section>
+
+      <div ><h3 class="aparecer"><i id="citrico" class="fas fa-lemon orange-icon"></i> 
+        Aromas cítricos <i id="citrico" class="fas fa-lemon orange-icon"></i>
+      </h3></div>
+      <section id="productos">
+        <div class="producto">
+          <div class="producto-carrusel">
+              <img class="producto-vela activo" src="img/clasica-limonyromero.png" alt="Vela Calabaza" />
+              <img class="producto-vela" src="img/ambar-lucerna.png" alt="Vela Alternativa" />
+          </div>
+          <div class="navegacion">
+              <span class="punto activo" data-index="0"></span>
+              <span class="punto" data-index="1"></span>
+          </div>
+          <h3 class="producto-titulo">Limón y romero</h3>
+          <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+          <select class="opciones">
+              <option value="220" data-precio="220">Clásica 200g - $220</option>
+              <option value="250" data-precio="250">Ámbar 200g - $250</option>
+          </select>
+          <p class="precio">Precio en pesos MX</p>
+          <button class="agregar-carrito">
+            <i class="fas fa-cart-plus"></i>
+            Agregar al carrito
+          </button>
+      </div>
+
+      <div class="producto">
+        <div class="producto-carrusel">
+            <img class="producto-vela activo" src="img/clasica.png" alt="Vela Calabaza" />
+            <img class="producto-vela" src="img/ambar-lucerna.png" alt="Vela Alternativa" />
+        </div>
+        <div class="navegacion">
+            <span class="punto activo" data-index="0"></span>
+            <span class="punto" data-index="1"></span>
+        </div>
+        <h3 class="producto-titulo">Citronela</h3>
+        <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+        <select class="opciones">
+            <option value="220" data-precio="220">Clásica 200g - $220</option>
+            <option value="250" data-precio="250">Ámbar 200g - $250</option>
+        </select>
+        <p class="precio">Precio en pesos MX</p>
+        <button class="agregar-carrito">
+          <i class="fas fa-cart-plus"></i>
+          Agregar al carrito
+        </button>
+    </div>
+        
+    <div class="producto">
+      <div class="producto-carrusel">
+          <img class="producto-vela activo" src="img/clasica.png" alt="Vela Calabaza" />
+          <img class="producto-vela" src="img/ambar-lucerna.png" alt="Vela Alternativa" />
+      </div>
+      <div class="navegacion">
+          <span class="punto activo" data-index="0"></span>
+          <span class="punto" data-index="1"></span>
+      </div>
+      <h3 class="producto-titulo">Citrux delux</h3>
+      <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+      <select class="opciones">
+          <option value="220" data-precio="220">Clásica 200g - $220</option>
+          <option value="250" data-precio="250">Ámbar 200g - $250</option>
+      </select>
+      <p class="precio">Precio en pesos MX</p>
+      <button class="agregar-carrito">
+        <i class="fas fa-cart-plus"></i>
+        Agregar al carrito
+      </button>
+  </div>
+      
+  <div class="producto">
+    <div class="producto-carrusel">
+        <img class="producto-vela activo" src="img/clasica-toronja.png" alt="Vela Calabaza" />
+        <img class="producto-vela" src="img/ambar-toronja.png" alt="Vela Alternativa" />
+    </div>
+    <div class="navegacion">
+        <span class="punto activo" data-index="0"></span>
+        <span class="punto" data-index="1"></span>
+    </div>
+    <h3 class="producto-titulo">Toronja</h3>
+    <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+    <select class="opciones">
+        <option value="220" data-precio="220">Clásica 200g - $220</option>
+        <option value="250" data-precio="250">Ámbar 200g - $250</option>
+    </select>
+    <p class="precio">Precio en pesos MX</p>
+    <button class="agregar-carrito">
+      <i class="fas fa-cart-plus"></i>
+      Agregar al carrito
+    </button>
+</div>
+        
+<div class="producto">
+  <div class="producto-carrusel">
+      <img class="producto-vela activo" src="img/clasica.png" alt="Vela Calabaza" />
+      <img class="producto-vela" src="img/ambar-lucerna.png" alt="Vela Alternativa" />
+  </div>
+  <div class="navegacion">
+      <span class="punto activo" data-index="0"></span>
+      <span class="punto" data-index="1"></span>
+  </div>
+  <h3 class="producto-titulo">Blue agave</h3>
+  <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+  <select class="opciones">
+      <option value="220" data-precio="220">Clásica 200g - $220</option>
+      <option value="250" data-precio="250">Ámbar 200g - $250</option>
+  </select>
+  <p class="precio">Precio en pesos MX</p>
+  <button class="agregar-carrito">
+    <i class="fas fa-cart-plus"></i>
+    Agregar al carrito
+  </button>
+</div>
+      </section>
+
+      <div ><h3 class="aparecer"><i class="fas fa-wine-glass-alt"></i> Aromas gourmet 
+        <i class="fas fa-concierge-bell"></i> 
+
+      </h3></div>
+      <section id="productos">
+        <div class="producto">
+          <div class="producto-carrusel">
+              <img class="producto-vela activo" src="img/clasica.png" alt="Vela Calabaza" />
+              <img class="producto-vela" src="img/ambar-lucerna.png" alt="Vela Alternativa" />
+          </div>
+          <div class="navegacion">
+              <span class="punto activo" data-index="0"></span>
+              <span class="punto" data-index="1"></span>
+          </div>
+          <h3 class="producto-titulo">Palo santo</h3>
+          <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+          <select class="opciones">
+              <option value="220" data-precio="220">Clásica 200g - $220</option>
+              <option value="250" data-precio="250">Ámbar 200g - $250</option>
+          </select>
+          <p class="precio">Precio en pesos MX</p>
+          <button class="agregar-carrito">
+            <i class="fas fa-cart-plus"></i>
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div class="producto">
+          <div class="producto-carrusel">
+              <img class="producto-vela activo" src="img/clasica-vainilla.png" alt="Vela Calabaza" />
+              <img class="producto-vela" src="img/ambar-lucerna.png" alt="Vela Alternativa" />
+          </div>
+          <div class="navegacion">
+              <span class="punto activo" data-index="0"></span>
+              <span class="punto" data-index="1"></span>
+          </div>
+          <h3 class="producto-titulo">Vainilla</h3>
+          <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+          <select class="opciones">
+              <option value="220" data-precio="220">Clásica 200g - $220</option>
+              <option value="250" data-precio="250">Ámbar 200g - $250</option>
+          </select>
+          <p class="precio">Precio en pesos MX</p>
+          <button class="agregar-carrito">
+            <i class="fas fa-cart-plus"></i>
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div class="producto">
+          <div class="producto-carrusel">
+              <img class="producto-vela activo" src="img/clasica-champagne.png" alt="Vela Calabaza" />
+              <img class="producto-vela" src="img/ambar-champagne.png" alt="Vela Alternativa" />
+          </div>
+          <div class="navegacion">
+              <span class="punto activo" data-index="0"></span>
+              <span class="punto" data-index="1"></span>
+          </div>
+          <h3 class="producto-titulo">Champagne y fresa</h3>
+          <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+          <select class="opciones">
+              <option value="220" data-precio="220">Clásica 200g - $220</option>
+              <option value="250" data-precio="250">Ámbar 200g - $250</option>
+          </select>
+          <p class="precio">Precio en pesos MX</p>
+          <button class="agregar-carrito">
+            <i class="fas fa-cart-plus"></i>
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div class="producto">
+          <div class="producto-carrusel">
+              <img class="producto-vela activo" src="img/clasica.png" alt="Vela Calabaza" />
+              <img class="producto-vela" src="img/ambar-lucerna.png" alt="Vela Alternativa" />
+          </div>
+          <div class="navegacion">
+              <span class="punto activo" data-index="0"></span>
+              <span class="punto" data-index="1"></span>
+          </div>
+          <h3 class="producto-titulo">Melón y sandía</h3>
+          <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+          <select class="opciones">
+              <option value="220" data-precio="220">Clásica 200g - $220</option>
+              <option value="250" data-precio="250">Ámbar 200g - $250</option>
+          </select>
+          <p class="precio">Precio en pesos MX</p>
+          <button class="agregar-carrito">
+            <i class="fas fa-cart-plus"></i>
+            Agregar al carrito
+          </button>
+        </div> 
+      </section>
+
+      <div>
+        <h3 class="aparecer"><i id="otono" class="fas fa-leaf"></i> 
+          Aromas de temporada 🎃
+        </h3>
+    </div>
+    
+      <section id="productos">
+
+        <div class="producto">
+          <div class="producto-carrusel">
+              <img class="producto-vela activo" src="img/cempasuchil.png" alt="Vela Calabaza" />
+              <img class="producto-vela" src="img/ambar-cempasuchil.png" alt="Vela Alternativa" />
+          </div>
+          <div class="navegacion">
+              <span class="punto activo" data-index="0"></span>
+              <span class="punto" data-index="1"></span>
+          </div>
+          <h3 class="producto-titulo">Cempasúchil</h3>
+          <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+          <select class="opciones">
+              <option value="220" data-precio="220">Clásica 200g - $220</option>
+              <option value="250" data-precio="250">Ámbar 200g - $250</option>
+          </select>
+          <p class="precio">Precio en pesos MX</p>
+          <button class="agregar-carrito">
+            <i class="fas fa-cart-plus"></i>
+            Agregar al carrito
+          </button>
+      </div>
+        
+      
+      <div class="producto">
+        <div class="producto-carrusel">
+            <img class="producto-vela activo" src="img/ronycalabaza.png" alt="Vela Calabaza" />
+            <img class="producto-vela" src="img/ambar-calabazayron.png" alt="Vela Alternativa" />
+        </div>
+        <div class="navegacion">
+            <span class="punto activo" data-index="0"></span>
+            <span class="punto" data-index="1"></span>
+        </div>
+        <h3 class="producto-titulo">Calabaza y ron</h3>
+        <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+        <select class="opciones">
+            <option value="220" data-precio="220">Clásica 200g - $220</option>
+            <option value="250" data-precio="250">Ámbar 200g - $250</option>
+        </select>
+        <p class="precio">Precio en pesos MX</p>
+        <button class="agregar-carrito">
+          <i class="fas fa-cart-plus"></i>
+          Agregar al carrito
+        </button>
+    </div>
+    <div class="producto">
+      <div class="producto-carrusel">
+          <img class="producto-vela activo" src="img/calabaza.png" alt="Vela Calabaza" />
+          <img class="producto-vela" src="img/ambar-calabaza.png" alt="Vela Alternativa" />
+      </div>
+      <div class="navegacion">
+          <span class="punto activo" data-index="0"></span>
+          <span class="punto" data-index="1"></span>
+      </div>
+      <h3 class="producto-titulo">Calabaza</h3>
+      <label for="opciones-calabaza">Selecciona el tamaño y precio:</label>
+      <select class="opciones">
+          <option value="220" data-precio="220">Clásica 200g - $220</option>
+          <option value="250" data-precio="250">Ámbar 200g - $250</option>
+      </select>
+      <p class="precio">Precio en pesos MX</p>
+      <button class="agregar-carrito">
+        <i class="fas fa-cart-plus"></i>
+        Agregar al carrito
+      </button>
+  </div>-->
+      
+  
+      <!-- Sección del carrito que estará oculta inicialmente -->
+      <section id="carrito" style="display: none">
+        <div class="header-carrito">
+          
+          <button id="cerrar" title="Cerrar">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <h2 class="decorado">Tu Carrito</h2>
+          
+        </div>
+        <div id="lista-carrito">
+            <!-- Aquí se agregarán los productos seleccionados -->
+        </div>
+        <div id="total-compra">Total: $<span id="total">0</span></div>
+        <br>
+        <!-- Campo para ingresar el número de teléfono o correo electrónico -->
+        <div id="contacto">
+            <label for="contacto-info">Ingresa tu teléfono:</label>
+            <input 
+  type="text" 
+  id="contacto-info" 
+  name="contacto-info" 
+  placeholder="Teléfono" 
+  required 
+  pattern="\d{10}" 
+  title="Ingresa un número de teléfono de 10 dígitos" 
+  maxlength="10" 
+  oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"
+>
+
+
+        </div>
+        <br>
+        <button class="envio" id="checkout">
+          <i class="fas fa-paper-plane"></i> Realizar Pedido
+      </button>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-left">
+        <h2>Farmacia Homeopática Vannier</h2>
+        
+        <div class="social-icons">
+          <!--
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>-->
+        </div>
+        <img src="img/logo_vannier.png" alt="Logo Farmacia Vannier" class="footer-logo">
+      </div>
+    
+      <div class="footer-right">
+        <ul>
+          <li><a href="acerca.html">Referente a</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li>
+            <a href="https://wa.me/5585601745?text=Hola%2C%20me%20interesa%20obtener%20información%20sobre%20sus%20productos." target="_blank" rel="noopener noreferrer">
+              Contacto
+            </a>
+          </li>          
+        </ul>
+      </div>
+      <div class="firma">
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    
+    
+    
+   
+      
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const avisosSwiper = new Swiper('.avisos-carrusel', {
+    loop: true,
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const productos = document.querySelectorAll(".producto");
+
+    let modalAbierto = null;
+
+    productos.forEach((producto) => {
+        const img = producto.querySelector("img"); // Imagen del producto
+        const modal = producto.querySelector(".modal"); // Modal correspondiente
+        const closeBtn = modal.querySelector(".close"); // Botón de cierre del modal
+
+        // Mostrar el modal al hacer clic en la imagen
+        img.addEventListener("click", () => {
+            if (modalAbierto && modalAbierto !== modal) {
+                modalAbierto.style.display = "none"; // Cerrar cualquier modal abierto
+            }
+            modal.style.display = "flex"; // Mostrar el modal
+            modalAbierto = modal; // Guardar la referencia del modal abierto
+        });
+
+        // Cerrar el modal al hacer clic en el botón de cierre
+        closeBtn.addEventListener("click", (e) => {
+            e.stopPropagation(); // Evitar que el clic se propague al modal
+            modal.style.display = "none"; // Ocultar el modal
+            modalAbierto = null; // Limpiar la referencia al modal abierto
+        });
+
+        // Cerrar el modal al hacer clic fuera del contenido del modal
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none"; // Ocultar el modal
+                modalAbierto = null; // Limpiar la referencia al modal abierto
+            }
+        });
+    });
+
+    // Cerrar cualquier modal al hacer clic en cualquier parte de la página
+    document.addEventListener("click", (e) => {
+        if (modalAbierto && !e.target.closest(".producto")) {
+            modalAbierto.style.display = "none"; // Cerrar el modal
+            modalAbierto = null; // Limpiar la referencia al modal abierto
+        }
+    });
+});
+
+
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
+

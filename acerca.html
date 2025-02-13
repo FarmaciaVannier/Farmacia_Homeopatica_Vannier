@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmacia Homeopatica Vannier</title>
+    
+
+    <!-- CSS y otros recursos -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_vannier.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Incluye íconos de Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-dOi7gTp1hQzq5GrG5xWkDpmyu5klw6A5EUTDycVpFkRvHqKp3SDoRAe5V64u2RPQ+TCA1jGVZf5R4UuR2P4nvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  </head>
+  <div id="loader">
+    <img src="img/logo_vannier.png" alt="Icono de fondo" class="loader-icon">
+    <div class="loader-bars">
+      <div class="bar" style="background-color: #007bff;"></div>
+      <div class="bar" style="background-color: #ff6b6b;"></div>
+      <div class="bar" style="background-color: #6c5ce7;"></div>
+      <div class="bar" style="background-color: #2ecc71;"></div>
+      <div class="bar" style="background-color: #f39c12;"></div>
+      <div class="bar" style="background-color: #f1ea7d;"></div>
+      <div class="bar" style="background-color: #a12bb1;"></div>
+      <div class="bar" style="background-color: #f55a5a;"></div>
+    </div>
+    <p class="loader-text">Cargando...</p>
+  </div>
+  <script>
+    window.addEventListener('load', function() {
+      const loader = document.getElementById('loader');
+      
+      // Desvanecer el loader
+      loader.style.transition = 'opacity 0.5s ease';
+      loader.style.opacity = '0';
+  
+      // Esperar el final de la animación y luego ocultar el loader
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500); // El mismo tiempo de la transición de opacidad
+    });
+  </script>
+  
+  
+  
+    
+  <body>
+
+    <header>
+      <div class="header-container">
+        <a><img class="img-logo" src="img/logo_vannier.png" alt="logo" /></a>
+
+        <nav class="menu">
+          <a href="acerca.html">Referente a</a>
+          <a href="productos.html">Productos</a>
+          <a href="index.html">Blog</a>
+          <a href="https://wa.me/5585601745?text=Hola%2C%20me%20interesa%20obtener%20información%20sobre%20sus%20productos." target="_blank">Contacto</a>
+        </nav>
+        <div class="menu-icon" style="cursor: pointer">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="cart" style="cursor: pointer">
+          <i class="fas fa-cart-shopping"></i>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+    </header>
+    <div id="avisos">
+      <div class="swiper avisos-carrusel">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="img/carrusel2.jpg" alt="Imagen 2" />
+          </div>
+          <div class="swiper-slide"><img src="img/carrusel3.jpg" alt="Imagen 3"></div>
+           
+        </div>
+        <!-- Paginación -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    
+    
+
+    <main>
+      <section id="remembranza">
+        <div class="content">
+          <h2>REMEMBRANZA DE LA FARMACIA HOMEOPÁTICA VANNIER Y SEMBLANZA DEL DOCTOR LUIS GARCIA GONZALEZ</h2>
+          <p>
+            A inicios de los años sesenta del siglo pasado, el Dr. Luis García González adquiere la farmacia y consultorio homeopático del 
+            Dr. Daniel Carrillo quien a su vez la inauguró en los primeros años del siglo veinte. Ésta se ubicaba en la 
+            calle de Nápoles N°84 de la colonia Juárez, en la Ciudad de México, en un edificio moderno para aquel entonces, 
+            que aún se encuentra en pie; rodeado de algunas de las últimas casas majestuosas del porfiriato. Esto 
+            nos puede ayudar a darnos una idea de lo bella que era la farmacia, la cual estaba completamente 
+            amueblada por anaqueles de madera fina y que dio su mejor esplendor en el siglo pasado</p>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="img/LuisGarcia.png" alt="Doctor Luis García González">
+              <p class="description">El Dr. Luis García González, creador de las formulas magistrales (medicamentos) Vannier.</p>
+            </div>
+          </div>
+          <p>Una vez adquirida la farmacia y el consultorio, el Dr. García renueva e impulsa la nueva imagen de 
+            la farmacia que por nombre llevaría: Farmacia Homeopática García-Carrillo. Es a partir de estos inicios 
+            cuando el doctor García pone sus fórmulas magistrales (medicamentos) al servicio de sus clientes y 
+            pacientes, elaboradas mucho tiempo antes durante sus primeros años como profesionista médico en los 
+            años cuarenta a partir de sus propia experiencia y conocimientos. </p>
+          <p>
+            El Dr. García también colaboró en la elaboración de algunas de las fórmulas poli fármaco de los 
+            laboratorios Homeopáticos Gliser en apoyo al Dr. Ricardo Sigler, fundador y dueño del laboratorio 
+            homeopático Gliser, el cual aún sigue en funciones y se ubica en San Luis Potosí, de igual forma 
+            también colaboró de la mano con el Dr. Rafael Sánchez Hinojosa fundador y dueño del Laboratorio 
+            Propulsora de Homeopatía (Similia) que aún hoy sigue en funciones y se ubica en la colonia Santa 
+            María la Ribera.</p>
+          <p>
+            De igual forma colaboró con el Dr. Ignacio Fernández de Lara precursor de lo que hoy es Farmacias 
+            y Laboratorio Homeopático Medicor y que a mediados de del siglo pasado obtuvo la representación del 
+            Laboratorio Homeopático Wilmar Schawabe de Karlsruhe, Alemania.
+           </p>
+          <p>
+            De todas estas participaciones adquirió conocimiento, experiencia y junto con su ejercicio profesional 
+            él mismo creó sus propias fórmulas Magistrales.
+           </p>
+          <p>
+            El Dr. García siempre preocupado y comprometido por impulsar y extender la homeopatía escribió varios 
+            prontuarios sobre padecimientos más frecuentes y un libro sobre Sulphur un policresto de gran importancia 
+            en homeopatía, así mismo participó en la elaboración de la Farmacopea Homeopática Mexicana en estrecha 
+            colaboración con la Dra. Reséndiz y otros médicos destacados en el ámbito homeopático.
+           </p>
+          <p>
+            También participo en varias ediciones de congresos homeopáticos a nivel nacional, algunas veces como 
+            ponente y otras como organizador. Esta continua actualización en su profesión le ayudo a gozar de un 
+            buen reconocimiento y prestigio médico.
+          </p>
+          <p>
+            El Dr. García laboró en la Secretaria de Salud por 30 años hasta su jubilación, en ella fungió la mayor 
+            parte del tiempo como Jefe Inspector de Establecimientos y Farmacias Homeopáticas, este puesto le 
+            permitió estar actualizado y conocer toda la normatividad y legislación sanitaria para el área 
+            homeopática.
+           </p>
+          <p>
+            Es todo este trabajo, experiencia y conocimiento profesional citado anteriormente lo que él puso 
+            al servicio de sus pacientes y clientes en su propia farmacia y consultorio gracias a sus fórmulas 
+            magistrales.
+           </p>
+          <p>
+            Estas dichas fórmulas magistrales (medicamentos) son las que aún hoy día siguen brindando salud y bienestar a 
+            la población que lo requiere y es posible acceder a ellos a través de lo que hoy es la Farmacia 
+            Homeopática Vannier, continuación o prolongación de lo que en otro momento fuera la farmacia 
+            García- Carrillo. 
+           </p>
+          <p>
+            Cuando el Dr. García deja de ocupar las accesorias de la colonia Juárez a finales de los años ochentas, 
+            decide trasladar su farmacia a Ciudad Nezahualcóyotl donde hoy se ubica. Al realizar dicho cambio de 
+            domicilio se retira de su profesión y decide heredar y dejar a su cargo a su hijo Guillermo García, 
+            actual dueño de la Farmacia Vannier quien lleva al frente de dicha farmacia, 28 años.
+             </p>
+             <div class="gallery">
+              <div class="gallery-item">
+                <a>
+                  <img src="img/farmacia.jpg" alt="Farmacia Homeopática Vannier">
+                </a>
+                <p class="description">La Farmacia Homeopática Vannier en su ubicación actual.</p>
+              </div>
+            </div>
+            
+            
+          <p>
+            Sirva esta breve semblanza como carta de presentación para hacer de su conocimiento y sobre todo 
+            para poner a su alcance los beneficios de estas Fórmulas Magistrales (medicamentos) para ayudar a 
+            sanar y mitigar el dolor y sufrimiento propios de la enfermedad, realidad siempre presente en la 
+            vida.
+          </p>
+          <p>
+            De esta forma rindo reconocimiento al Dr. García por su amor, compromiso y entrega por toda una 
+            vida dedicada a la medicina homeopática. Y finalmente para ponernos a sus órdenes en Farmacia 
+            Homeopática Vannier en donde Usted puede consultar y adquirir dichas fórmulas magistrales, 
+            (Medicamentos Homeopáticos), en pro de su salud y bienestar que es sin duda, nuestro principal 
+            deseo y afán.
+           </p>
+         
+        </div>
+      </section>
+      
+      
+<!-- Sección del carrito que estará oculta inicialmente -->
+<section id="carrito" style="display: none">
+  <div class="header-carrito">
+    <button id="cerrar" title="Cerrar">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+    <h2 class="decorado">Tu Carrito</h2>
+  </div>
+  <div id="lista-carrito">
+      <!-- Aquí se agregarán los productos seleccionados -->
+  </div>
+  <div id="total-compra">Total: $<span id="total">0</span></div>
+  <br>
+  <!-- Campo para ingresar el número de teléfono o correo electrónico -->
+  <div id="contacto">
+      <label for="contacto-info">Ingresa tu teléfono:</label>
+      <input type="text" id="contacto-info" name="contacto-info" placeholder="Teléfono" required 
+       pattern="\d{10}" title="Ingresa un número de teléfono de 10 dígitos">
+
+  </div>
+  <br>
+  <button id="checkout">
+    <i class="fas fa-paper-plane"></i> Realizar Pedido
+</button>
+</section>
+    
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-left">
+        <h2>Farmacia Homeopática Vannier</h2>
+        
+        <div class="social-icons">
+          <!--
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>-->
+        </div>
+        <img src="img/logo_vannier.png" alt="Logo Farmacia Vannier" class="footer-logo">
+      </div>
+    
+      <div class="footer-right">
+        <ul>
+          <li><a href="acerca.html">Referente a</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li>
+            <a href="https://wa.me/5585601745?text=Hola%2C%20me%20interesa%20obtener%20información%20sobre%20sus%20productos." target="_blank" rel="noopener noreferrer">
+              Contacto
+            </a>
+          </li>          
+        </ul>
+      </div>
+      <div class="firma">
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    
+    
+    
+   
+      
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const avisosSwiper = new Swiper('.avisos-carrusel', {
+    loop: true,
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+  });
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
+
